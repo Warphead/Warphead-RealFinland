@@ -1,0 +1,122 @@
+﻿focus_tree = {
+	id = finnish_focus
+
+	country =
+		{
+		factor = 0
+
+		modifier =
+			{
+			add = 10
+			tag = FIN
+			}
+		}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	# Focus 1
+	focus = {
+		id = finns_are_greatest
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		icon = GFX_finski_conquer_usa
+		x = 1
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+
+		allow_branch = {
+		# focus can't be seen unless condition is true
+		}
+
+		available = {
+				NOT = { is_in_faction_with = USA }
+				#NOT = { has_country_flag = britain_enforced_our_loyalty }
+				}
+		bypass =
+				{}
+		cost = 1
+		#prerequisite = { focus = AST_workers_paradise }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		select_effect = {
+		add_political_power = 100;
+		}
+
+		completion_reward =
+			{
+			add_political_power = 100
+			}
+		ai_will_do = {}
+		}
+
+		# Focus 2
+		focus = {
+			id = finski_conquer_usa
+			icon = GFX_finski_conquer_usa
+			x = 2
+			y = 2
+			relative_position_id = finns_are_greatest
+
+			available =
+				{
+					NOT = { is_in_faction_with = USA }
+					#NOT = { has_country_flag = britain_enforced_our_loyalty }
+				}
+
+			mutually_exclusive =
+				{ focus = finski_conquer_russia }
+
+			bypass = {}
+			cost = 1
+			prerequisite = { focus = finns_are_greatest }
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+
+			completion_reward =
+				{ add_political_power = 100 }
+			ai_will_do = {}
+		}
+
+		# Focus 3
+		focus = {
+			id = finski_conquer_russia
+			icon = GFX_finski_conquer_usa
+			x = -2
+			y = 2
+			relative_position_id = finns_are_greatest
+
+			available = {
+					NOT = { is_in_faction_with = USA }
+					#NOT = { has_country_flag = britain_enforced_our_loyalty }
+				}
+
+				mutually_exclusive = {
+				focus = finski_conquer_usa
+				}
+
+			bypass = {}
+			cost = 1
+			prerequisite = { focus = finns_are_greatest }
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+
+
+			select_effect = {
+			#give something when selecting
+			}
+			completion_reward =
+				{
+				add_political_power = 100
+				}
+			ai_will_do = {}
+		}
+	}
+}
