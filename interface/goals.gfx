@@ -3,6 +3,11 @@ spriteTypes = {
 	### Real Finland spriteTypes
 
 	SpriteType = {
+	name = "GFX_build_finnish_forts"
+	texturefile = "gfx/interface/goals/focus_construct_finnish_forts.dds"
+	}
+
+	SpriteType = {
 	name = "GFX_reach_comitern"
 	texturefile = "gfx/interface/goals/focus_reach_comitern.dds"
 	}

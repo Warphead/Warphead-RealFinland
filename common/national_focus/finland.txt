@@ -115,7 +115,7 @@
 				  focus = reach_comitern }
 
 			bypass = {}
-			cost = 1
+			cost = 0.1
 			prerequisite = { focus = diplomatic_preparations }
 
 			cancel_if_invalid = yes
@@ -126,6 +126,159 @@
 				{ add_political_power = 100 }
 			ai_will_do = {}
 		}
+
+		focus = {
+			id = build_salpaline_1
+			icon = GFX_build_finnish_forts
+			x = 5 y = 1
+			#relative_position_id = diplomatic_preparations
+			available = {}
+			bypass = {}
+			cost = 1
+			#prerequisite = { focus = diplomatic_preparations }
+			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+			completion_reward = {
+				111 = {
+			add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6082
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6186
+							instant_build = yes
+						}}}
+			ai_will_do = {}
+		}
+
+		focus = {
+			id = build_salpaline_2
+			icon = GFX_build_finnish_forts
+			x = 0 y = 1
+			relative_position_id = build_salpaline_1
+			available = {}
+			bypass = {}
+			cost = 1
+			prerequisite = { focus = build_salpaline_1 }
+			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+			completion_reward = {
+				111 = {
+			add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6082
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6186
+							instant_build = yes
+						}
+						add_building_construction = {
+								type = bunker
+								level = 1
+								province = 52
+								instant_build = yes
+							}}
+
+				150 = {
+			add_building_construction = {
+							type = bunker
+							level = 1
+							province = 139
+							instant_build = yes
+							}
+			add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3030
+							instant_build = yes
+							}
+			add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3068
+							instant_build = yes
+							}
+		add_building_construction = {
+						type = bunker
+						level = 1
+						province = 9061
+						instant_build = yes
+
+						}}}
+
+			ai_will_do = {}
+		}
+
+		focus = {
+			id = build_salpaline_3
+			icon = GFX_build_finnish_forts
+			x = 0 y = 2
+			relative_position_id = build_salpaline_1
+			available = {}
+			bypass = {}
+			cost = 1
+			prerequisite = { focus = build_salpaline_2 }
+			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+			completion_reward = {
+				111 = {
+			add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6082
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6186
+							instant_build = yes
+						}
+						add_building_construction = {
+								type = bunker
+								level = 1
+								province = 52
+								instant_build = yes
+							}}
+
+				150 = {
+			add_building_construction = {
+							type = bunker
+							level = 1
+							province = 139
+							instant_build = yes
+							}
+			add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3030
+							instant_build = yes
+							}
+			add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3068
+							instant_build = yes
+							}
+		add_building_construction = {
+						type = bunker
+						level = 1
+						province = 9061
+						instant_build = yes
+
+						}}}
+
+			ai_will_do = {}
+		}
+
 
 	### Focus 1
 	focus = {
