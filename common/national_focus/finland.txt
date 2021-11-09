@@ -16,6 +16,30 @@
 
 	continuous_focus_position = { x = 50 y = 1000 }
 
+### Political focus
+	### Focus 1
+	focus = {
+		id = diplomacy
+		search_filters = { FOCUS_FILTER_INDUSTRIAL }
+		icon = GFX_finski_conquer_usa
+		x = 10
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+
+		cost = 10
+		#prerequisite = { focus = AST_workers_paradise }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward =
+			{
+			add_political_power = 100
+			}
+		ai_will_do = {}
+		}
+
 	### Focus 1
 	focus = {
 		id = finns_are_greatest
