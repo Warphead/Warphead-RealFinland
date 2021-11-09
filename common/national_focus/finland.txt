@@ -16,10 +16,10 @@
 
 	continuous_focus_position = { x = 50 y = 1000 }
 
-	# Focus 1
+	### Focus 1
 	focus = {
 		id = finns_are_greatest
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRIAL }
 		icon = GFX_finski_conquer_usa
 		x = 1
 		y = 1
