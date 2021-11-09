@@ -13,6 +13,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_reach_axis"
+	texturefile = "gfx/interface/goals/focus_chi_mission_to_germany.dds"
+	}
+
+	SpriteType = {
 	name = "GFX_finski_conquer_usa"
 	texturefile = "gfx/interface/goals/focus_finski_conquer_usa.dds"
 	}
