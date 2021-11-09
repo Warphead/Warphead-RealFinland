@@ -277,7 +277,7 @@ units = {
 ### No air units (first formed Jan-1938) ###
 air_wings = {
 	### I. Luftkreiskommando -- Konigsberg ###
-	763 = {
+	111 = {
 		# Jagdgeschwader 232
 		fighter_equipment_0 =  {		# He 51
 			owner = "FIN"
@@ -285,6 +285,7 @@ air_wings = {
 		}
 		name = "Jagdgeschwader 232"
 	}
+}
 ### Starting Production ###
 instant_effect = {
 	add_equipment_production = {

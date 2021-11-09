@@ -32,6 +32,7 @@ SpriteType = {
 	legacy_lazy_load = no
 }
 
+
 	SpriteType = {
 		name = "GFX__shine"
 		texturefile = "gfx/interface/goals/goal_unknown.dds"

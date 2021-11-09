@@ -19,25 +19,112 @@
 ### Political focus
 	### Focus 1
 	focus = {
-		id = diplomacy2
+		id = diplomatic_preparations
 		search_filters = { FOCUS_FILTER_INDUSTRIAL }
 		icon = GFX_finski_conquer_usa
-		x = 10
-		y = 1
-		#relative_position_id = AST_empower_the_workers
 
-		cost = 10
-		#prerequisite = { focus = AST_workers_paradise }
+		x = 10 y = 1 cost = 1
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
 
 		completion_reward =
 			{
 			add_political_power = 100
 			}
 		ai_will_do = {}
+		}
+
+		### Reach Axis
+
+		focus = {
+			id = reach_axis
+			icon = GFX_finski_conquer_usa
+			x = 2 y = 1
+			relative_position_id = diplomatic_preparations
+
+			available =
+				{
+					NOT = { is_in_faction_with = USA }
+					#NOT = { has_country_flag = britain_enforced_our_loyalty }
+				}
+
+			mutually_exclusive =
+				{ focus = reach_allies
+				  focus = reach_comitern }
+
+			bypass = {}
+			cost = 1
+			prerequisite = { focus = diplomatic_preparations }
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+
+			completion_reward =
+				{ add_political_power = 100 }
+			ai_will_do = {}
+		}
+
+		### Reach comitern
+
+		focus = {
+			id = reach_comitern
+			icon = GFX_reach_comitern
+			x = 0 y = 1
+			relative_position_id = diplomatic_preparations
+
+			available =
+				{
+					NOT = { is_in_faction_with = USA }
+					#NOT = { has_country_flag = britain_enforced_our_loyalty }
+				}
+
+			mutually_exclusive =
+				{ focus = reach_axis
+				  focus = reach_allies }
+
+			bypass = {}
+			cost = 1
+			prerequisite = { focus = diplomatic_preparations }
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+
+			completion_reward =
+				{ add_political_power = 100 }
+			ai_will_do = {}
+		}
+
+		### Reach allies
+
+		focus = {
+			id = reach_allies
+			icon = GFX_reach_allies
+			x = -2 y = 1
+			relative_position_id = diplomatic_preparations
+
+			available =
+				{
+					NOT = { is_in_faction_with = USA }
+					#NOT = { has_country_flag = britain_enforced_our_loyalty }
+				}
+
+			mutually_exclusive =
+				{ focus = reach_axis
+				  focus = reach_comitern }
+
+			bypass = {}
+			cost = 1
+			prerequisite = { focus = diplomatic_preparations }
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+
+			completion_reward =
+				{ add_political_power = 100 }
+			ai_will_do = {}
 		}
 
 	### Focus 1
