@@ -19,7 +19,7 @@
 ### Political focus
 	### Focus 1
 	focus = {
-		id = diplomacy
+		id = diplomacy2
 		search_filters = { FOCUS_FILTER_INDUSTRIAL }
 		icon = GFX_finski_conquer_usa
 		x = 10
