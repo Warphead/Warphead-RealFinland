@@ -21,7 +21,7 @@
 	focus = {
 		id = diplomatic_preparations
 		search_filters = { FOCUS_FILTER_INDUSTRIAL }
-		icon = GFX_finski_conquer_usa
+		icon = GFX_goal_generic_improve_relations
 
 		x = 10 y = 1 cost = 1
 
@@ -128,6 +128,70 @@
 		}
 
 		focus = {
+			id = alko_1
+			icon = GFX_goal_generic_construct_civ_factory
+			x = 3 y = 1
+			#relative_position_id = diplomatic_preparations
+			available = {}
+			bypass = {}
+			cost = 1
+			#prerequisite = { focus = diplomatic_preparations }
+			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+			completion_reward = {
+				111 = {
+					add_building_construction = {
+									type = industrial_complex
+									level = 1
+									#province = 6145
+									instant_build = yes
+			}}}
+			ai_will_do = {}
+		}
+
+		focus = {
+			id = alko_2
+			icon = GFX_goal_generic_construct_civ_factory
+			x = 3 y = 2
+			#relative_position_id = diplomatic_preparations
+			available = {}
+			bypass = {}
+			cost = 1
+			#prerequisite = { focus = diplomatic_preparations }
+			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+			completion_reward = {
+
+			}
+			ai_will_do = {}
+		}
+
+		focus = {
+			id = alko_3
+			icon = GFX_goal_generic_construct_civ_factory
+			x = 3 y = 3
+			#relative_position_id = diplomatic_preparations
+			available = {}
+			bypass = {}
+			cost = 1
+			#prerequisite = { focus = diplomatic_preparations }
+			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+			completion_reward = {
+				111 = {
+					add_building_construction = {
+									type = anti_air_building
+									level = 1
+									#province = 6145
+									instant_build = yes
+			}}}
+			ai_will_do = {}
+		}
+
+### Fortification focuses
+### Hide salpaline until later
+
+		focus = {
 			id = build_salpaline_1
 			icon = GFX_build_finnish_forts
 			x = 5 y = 1
@@ -137,6 +201,8 @@
 			cost = 1
 			#prerequisite = { focus = diplomatic_preparations }
 			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+			### of terrotory not lost at winter war, make it on different route
 
 			completion_reward = {
 				111 = {
@@ -268,10 +334,82 @@
 							province = 3068
 							instant_build = yes
 							}
+			add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3185
+							instant_build = yes
+							}
+							add_building_construction = {
+											type = bunker
+											level = 1
+											province = 6134
+											instant_build = yes
+											}
+											add_building_construction = {
+															type = bunker
+															level = 1
+															province = 3073
+															instant_build = yes
+															}
+															add_building_construction = {
+																			type = bunker
+																			level = 1
+																			province = 6045
+																			instant_build = yes
+																			}
 		add_building_construction = {
 						type = bunker
 						level = 1
-						province = 9061
+						province = 7
+						instant_build = yes
+
+						}}
+
+						148 = {
+						add_building_construction = {
+						type = bunker
+						level = 1
+						province = 3158
+						instant_build = yes
+						}
+						add_building_construction = {
+						type = bunker
+						level = 1
+						province = 3107
+						instant_build = yes
+						}
+						add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11030
+						instant_build = yes
+						}
+						add_building_construction = {
+						type = bunker
+						level = 1
+						province = 3156
+						instant_build = yes
+
+						}}
+
+						722 = {
+						add_building_construction = {
+						type = bunker
+						level = 1
+						province = 9140
+						instant_build = yes
+						}
+						add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11142
+						instant_build = yes
+						}
+						add_building_construction = {
+						type = bunker
+						level = 1
+						province = 6183
 						instant_build = yes
 
 						}}}
@@ -285,7 +423,7 @@
 		id = finns_are_greatest
 		search_filters = { FOCUS_FILTER_INDUSTRIAL }
 		icon = GFX_finski_conquer_usa
-		x = 1
+		x = 11
 		y = 1
 		#relative_position_id = AST_empower_the_workers
 
@@ -321,7 +459,7 @@
 		focus = {
 			id = finski_conquer_usa
 			icon = GFX_finski_conquer_usa
-			x = 2
+			x = 22
 			y = 2
 			relative_position_id = finns_are_greatest
 
