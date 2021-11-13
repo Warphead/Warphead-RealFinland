@@ -327,7 +327,6 @@ if = {
 	create_equipment_variant = {
 		name = "Morane Saulnier MS406"
 		type = fighter_equipment_1
-
 		upgrades = {
 			plane_gun_upgrade = 0
 			plane_range_upgrade = 0
@@ -339,15 +338,17 @@ if = {
 
 	create_equipment_variant = {
 		name = "Brewster F2A Buffalo"
-		type = fighter_equipment_1
+		type = brewster_buffalo
 
 		upgrades = {
 			plane_gun_upgrade = 0
 			plane_range_upgrade = 0
 			plane_engine_upgrade = 0
-			plane_reliability_upgrade = 2
+			plane_reliability_upgrade = 0
 		}
 		obsolete = yes
 	}
+
+
 
 }

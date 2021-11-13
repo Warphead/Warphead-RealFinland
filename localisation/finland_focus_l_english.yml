@@ -1,11 +1,20 @@
 ﻿l_english:
-  finski_conquer_usa:0 "hakkaa paalle!2"
   build_salpaline_1:0 "Salpaline I"
+  build_salpaline_1_desc:9 "The most fortified position of Salpaline"
   build_salpaline_2:0 "Salpaline II"
+  build_salpaline_2_desc:0 "aa"
   build_salpaline_3:0 "Salpaline III"
+  build_salpaline_desc3:0 "bb"
   reach_comitern:0 "Reach Comitern"
   reach_axis:0 "Reach Axis"
   reach_allies:0 "Reach Allies
   alko_1:0 "Rajamäen Viinatehdas"
   alko_2:0 "Molotov's Cocktails"
   alko_3:0 "Rajamäen ilmatorjuntatorni"
+
+  brewster_buffalo:0 "Brewster F2A Buffalo"
+  brewster_buffalo_short:0 "BW"
+  brewster_buffalo_desc:0 "Finnish version of Brewster Buffalo called ryysteri or pylly-valtteri , reduced armor and weapons make it very agile. Tailhook is also removed"
+
+  morane_saulnier:0 "Morane Saulnier"
+  morane_saulnier_short:0 "MS406"

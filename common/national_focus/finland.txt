@@ -127,6 +127,8 @@
 			ai_will_do = {}
 		}
 
+		# Alcohol factory at Rajamäki
+
 		focus = {
 			id = alko_1
 			icon = GFX_goal_generic_construct_civ_factory
@@ -455,56 +457,58 @@
 		ai_will_do = {}
 		}
 
-		# Focus 2
+		# Finnish volunteers to SS division Wiking, sent after the winter war
 		focus = {
-			id = finski_conquer_usa
+			id = pantti_pataljoona_0
 			icon = GFX_finski_conquer_usa
 			x = 22
 			y = 2
-			relative_position_id = finns_are_greatest
+			#relative_position_id = finns_are_greatest
 
 			available =
 				{
-					NOT = { is_in_faction_with = USA }
+					#if { manpower > 3000 }
+					is_in_faction_with = GER
+					#NOT = { is_in_faction_with = USA }
 					#NOT = { has_country_flag = britain_enforced_our_loyalty }
 				}
 
 			mutually_exclusive =
-				{ focus = finski_conquer_russia }
+				{ }
 
 			bypass = {}
 			cost = 1
-			prerequisite = { focus = finns_are_greatest }
+			prerequisite = {  }
 
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
 
 			completion_reward =
-				{ add_political_power = 100 }
+				{ }
+					#{manpower = -3000 }
 			ai_will_do = {}
 		}
 
-		# Focus 3
+		# Return of SS volunteer to join contiunation war
 		focus = {
-			id = finski_conquer_russia
+			id = return_pantti_pataljoona
 			icon = GFX_finski_conquer_usa
 			x = -2
 			y = 2
-			relative_position_id = finns_are_greatest
+			relative_position_id = pantti_pataljoona_0
 
 			available = {
-					NOT = { is_in_faction_with = USA }
-					#NOT = { has_country_flag = britain_enforced_our_loyalty }
+				is_in_faction_with = GER
 				}
-
+				# spawn SS battation
 				mutually_exclusive = {
-				focus = finski_conquer_usa
+
 				}
 
 			bypass = {}
 			cost = 1
-			prerequisite = { focus = finns_are_greatest }
+			prerequisite = { focus = pantti_pataljoona_0 }
 
 			cancel_if_invalid = yes
 			continue_if_invalid = no
@@ -516,6 +520,8 @@
 			}
 			completion_reward =
 				{
+				# land doctrine boost
+				army_experience = 10
 				add_political_power = 100
 				}
 			ai_will_do = {}

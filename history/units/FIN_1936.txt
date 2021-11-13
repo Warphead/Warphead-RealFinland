@@ -279,7 +279,7 @@ air_wings = {
 	### I. Luftkreiskommando -- Konigsberg ###
 	111 = {
 		# Jagdgeschwader 232
-		fighter_equipment_0 =  {		# He 51
+		brewster_buffalo =  {		# Brewster Buffalo
 			owner = "FIN"
 			amount = 40
 		}
