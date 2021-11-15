@@ -1018,10 +1018,12 @@ equipments = {
 		year = 1936
 
 		archetype = fighter_equipment
+
 		parent = fighter_equipment_0
 		priority = 10
 
-		picture = archetype_fighter_equipment
+		#picture = archetype_fighter_equipment
+		picture = GER_fighter1
 		is_buildable = no
 
 
@@ -1043,6 +1045,37 @@ equipments = {
 		naval_strike_attack = 2
 		naval_strike_targetting = 10
 	}
+
+	hawker_hurricane = {
+		year = 1936
+
+		archetype = fighter_equipment
+		parent = fighter_equipment_0
+		priority = 10
+
+		picture = archetype_fighter_equipment
+		is_buildable = no
+
+
+		air_range = 482
+		maximum_speed = 547
+		air_agility = 50
+		# 4 x 12,7mm
+		air_attack = 18
+		air_defence = 10
+
+
+		build_cost_ic = 24
+		resources = {
+			#oil = 1
+			aluminium = 3
+			rubber = 1
+		}
+
+		naval_strike_attack = 2
+		naval_strike_targetting = 10
+	}
+
 	morane_saulnier = {
 		year = 1936
 

@@ -302,7 +302,7 @@ if = {
 
 	create_equipment_variant = {
 		name = "Fokker D.XXI"
-		type = fighter_equipment_1
+		type = fokker_dxxi
 		upgrades = {
 			plane_gun_upgrade = 0
 			plane_range_upgrade = 0
@@ -314,7 +314,7 @@ if = {
 
 	create_equipment_variant = {
 		name = "Hawker Hurricane I"
-		type = fighter_equipment_1
+		type = hawker_hurricane
 		upgrades = {
 			plane_gun_upgrade = 0
 			plane_range_upgrade = 0
@@ -326,7 +326,7 @@ if = {
 
 	create_equipment_variant = {
 		name = "Morane Saulnier MS406"
-		type = fighter_equipment_1
+		type = morane_saulnier
 		upgrades = {
 			plane_gun_upgrade = 0
 			plane_range_upgrade = 0
@@ -348,7 +348,41 @@ if = {
 		}
 		obsolete = yes
 	}
+	create_equipment_variant = {
+		name = "Gloster Gladiator"
+		type = gloster_gladiator
 
+		upgrades = {
+			plane_gun_upgrade = 0
+			plane_range_upgrade = 0
+			plane_engine_upgrade = 0
+			plane_reliability_upgrade = 0
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Fiat G.50"
+		type = fiat_g50
 
+		upgrades = {
+			plane_gun_upgrade = 0
+			plane_range_upgrade = 0
+			plane_engine_upgrade = 0
+			plane_reliability_upgrade = 0
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Blenheim"
+		type = blenheim
+
+		upgrades = {
+			plane_tac_bomb_upgrade = 5
+		plane_range_upgrade = 1
+		plane_engine_upgrade = 1
+		plane_reliability_upgrade = 5
+		}
+		obsolete = yes
+	}
 
 }

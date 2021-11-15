@@ -274,16 +274,56 @@ units = {
 	}
 }
 
-### No air units (first formed Jan-1938) ###
+### Air units that participated in the winter war, some were not available at 1936, but added here for simplicity ###
+
 air_wings = {
 	### I. Luftkreiskommando -- Konigsberg ###
 	111 = {
-		# Jagdgeschwader 232
-		brewster_buffalo =  {		# Brewster Buffalo
-			owner = "FIN"
-			amount = 40
-		}
-		name = "Jagdgeschwader 232"
+			# Jagdgeschwader 232
+				brewster_buffalo =  {		# Brewster Buffalo
+				owner = "FIN"
+				amount = 44
+				}
+				name = "Jagdgeschwader 232"
+
+				morane_saulnier =  {		# Morane Saulnier
+				owner = "FIN"
+				amount = 87
+				}
+				name = "Jagdgeschwader 232"
+
+
+				fokker_dxxi =  {		# Fokker D.XXI
+				owner = "FIN"
+				amount = 97
+				}
+				name = "Lentolaivue 10"
+
+
+				fiat_g50 =  {		# Fiat G.50 "Freccia"
+				owner = "FIN"
+				amount = 35
+				}
+				name = "Jagdgeschwader 232"
+
+
+				gloster_gladiator =  {		# Gloster Gladiator
+				owner = "FIN"
+				amount = 42
+				}
+
+					#name = "Jagdgeschwader 232"
+					#		hawker_hurricane =  {		# Morane Saulnier
+					#			owner = "FIN"
+					#			amount = 40
+					#		}
+
+					#		name = "Jagdgeschwader 232"
+				blenheim =  {		# Blenheim
+				owner = "FIN"
+				amount = 97
+				}
+				name = "Lentolaivue 42"
 	}
 }
 ### Starting Production ###

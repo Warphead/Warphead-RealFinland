@@ -440,6 +440,8 @@ equipments = {
 
 		archetype = tac_bomber_equipment
 		priority = 105
+		is_buildable = no
+
 
 		air_range = 1175
 		maximum_speed = 430

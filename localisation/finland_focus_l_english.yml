@@ -7,7 +7,7 @@
   build_salpaline_desc3:0 "bb"
   reach_comitern:0 "Reach Comitern"
   reach_axis:0 "Reach Axis"
-  reach_allies:0 "Reach Allies
+  reach_allies:0 "Reach Allies"
   alko_1:0 "Rajamäen Viinatehdas"
   alko_2:0 "Molotov's Cocktails"
   alko_3:0 "Rajamäen ilmatorjuntatorni"
@@ -18,3 +18,16 @@
 
   morane_saulnier:0 "Morane Saulnier"
   morane_saulnier_short:0 "MS406"
+  morane_saulnier_desc:0 "Mörkö Morane"
+
+  gloster_gladiator:0 "Gloster Gladiator"
+  gloster_gladiator_short:0 "GL"
+  gloster_gladiator_desc:0 "The Gloster Gladiator is a British-built biplane fighter"
+
+  fiat_g50:0 "Fiat G.50 Freccia"
+  fiat_g50_short:0 "FA"
+  fiat_g50_desc:0 "The Fiat G.50 Freccia ("Arrow") was a World War II Italian fighter aircraft developed and manufactured by aviation company Fiat."
+
+  blenheim:0 "Blenheim"
+  blenheim_short:0 "BL"
+  blenheim_desc:0 "The Bristol Blenheim is a British light bomber aircraft designed and built by the Bristol Aeroplane Company (Bristol) which was used extensively in the first two years and in some cases throughout the Second World War."

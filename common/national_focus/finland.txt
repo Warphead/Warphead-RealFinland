@@ -23,7 +23,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRIAL }
 		icon = GFX_goal_generic_improve_relations
 
-		x = 10 y = 1 cost = 1
+		x = 14 y = 1 cost = 1
 
 		cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
 
@@ -39,7 +39,7 @@
 		focus = {
 			id = reach_axis
 			icon = GFX_finski_conquer_usa
-			x = 2 y = 1
+			x = 4 y = 1
 			relative_position_id = diplomatic_preparations
 
 			available =
@@ -101,7 +101,7 @@
 		focus = {
 			id = reach_allies
 			icon = GFX_reach_allies
-			x = -2 y = 1
+			x = -4 y = 1
 			relative_position_id = diplomatic_preparations
 
 			available =
@@ -159,7 +159,7 @@
 			available = {}
 			bypass = {}
 			cost = 1
-			#prerequisite = { focus = diplomatic_preparations }
+			prerequisite = { focus = alko_1 }
 			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
 
 			completion_reward = {
@@ -176,7 +176,7 @@
 			available = {}
 			bypass = {}
 			cost = 1
-			#prerequisite = { focus = diplomatic_preparations }
+			prerequisite = { focus = alko_2 }
 			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
 
 			completion_reward = {
@@ -195,7 +195,7 @@
 
 		focus = {
 			id = build_salpaline_1
-			icon = GFX_build_finnish_forts
+			icon = GFX_construct_finnish_forts
 			x = 5 y = 1
 			#relative_position_id = diplomatic_preparations
 			available = {}
@@ -225,7 +225,7 @@
 
 		focus = {
 			id = build_salpaline_2
-			icon = GFX_build_finnish_forts
+			icon = GFX_construct_finnish_forts
 			x = 0 y = 1
 			relative_position_id = build_salpaline_1
 			available = {}
@@ -287,7 +287,7 @@
 
 		focus = {
 			id = build_salpaline_3
-			icon = GFX_build_finnish_forts
+			icon = GFX_construct_finnish_forts
 			x = 0 y = 2
 			relative_position_id = build_salpaline_1
 			available = {}
@@ -461,9 +461,9 @@
 		focus = {
 			id = pantti_pataljoona_0
 			icon = GFX_finski_conquer_usa
-			x = 22
-			y = 2
-			#relative_position_id = finns_are_greatest
+			x = 2
+			y = 1
+			relative_position_id = reach_axis
 
 			available =
 				{
@@ -478,7 +478,7 @@
 
 			bypass = {}
 			cost = 1
-			prerequisite = {  }
+			prerequisite = { focus = reach_axis }
 
 			cancel_if_invalid = yes
 			continue_if_invalid = no
@@ -494,8 +494,8 @@
 		focus = {
 			id = return_pantti_pataljoona
 			icon = GFX_finski_conquer_usa
-			x = -2
-			y = 2
+			x = 0
+			y = 1
 			relative_position_id = pantti_pataljoona_0
 
 			available = {
@@ -524,6 +524,38 @@
 				army_experience = 10
 				add_political_power = 100
 				}
+			ai_will_do = {}
+		}
+
+		focus = {
+			id = yhtyneet_paperitehtaat
+			icon = GFX_finski_conquer_usa
+			x = 22
+			y = 1
+			relative_position_id = reach_axis
+
+			available =
+				{
+					#if { manpower > 3000 }
+					is_in_faction_with = GER
+					#NOT = { is_in_faction_with = USA }
+					#NOT = { has_country_flag = britain_enforced_our_loyalty }
+				}
+
+			mutually_exclusive =
+				{ }
+
+			bypass = {}
+			cost = 1
+			prerequisite = { focus = reach_axis }
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+
+			completion_reward =
+				{ }
+					#{manpower = -3000 }
 			ai_will_do = {}
 		}
 	}
