@@ -179,6 +179,12 @@
 			prerequisite = { focus = alko_2 }
 			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
 
+			select_effect {
+				#civilian factories -1
+				#requested_factories = 1
+
+			}
+
 			completion_reward = {
 				111 = {
 					add_building_construction = {
@@ -295,6 +301,8 @@
 			cost = 1
 			prerequisite = { focus = build_salpaline_2 }
 			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+
 
 			completion_reward = {
 				111 = {

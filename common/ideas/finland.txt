@@ -353,7 +353,7 @@ ideas = {
 
 	industrial_concern = {
 
-			krupp = {
+			yhdistyneet_paperitehtaat = {
 
 				allowed = {
 					original_tag = FIN

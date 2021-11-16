@@ -1,0 +1,22 @@
+spriteTypes = {
+
+	### FIN planes ###
+
+	#SpriteType = {
+	#	name = "morane_saulnier"
+	#	texturefile = "gfx/interface/technologies/FIN_fighter1.dds"
+	#}
+
+
+	#SpriteType = {
+	#	name = "Morane Saulnier"
+	#	texturefile = "gfx/interface/technologies/FIN_fighter1.dds"
+	#}
+
+	SpriteType = {
+		name = "GFX_morane_saulnier"
+		texturefile = "gfx/interface/technologies/FIN_fighter1.dds"
+	}
+
+
+}
