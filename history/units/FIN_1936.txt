@@ -290,7 +290,7 @@ air_wings = {
 				owner = "FIN"
 				amount = 87
 				}
-				name = "Jagdgeschwader 232"
+				name = "Jagdgeschwader 1232"
 
 
 				fokker_dxxi =  {		# Fokker D.XXI
@@ -304,26 +304,28 @@ air_wings = {
 				owner = "FIN"
 				amount = 35
 				}
-				name = "Jagdgeschwader 232"
+				name = "Jagdgeschwader 2232"
 
 
 				gloster_gladiator =  {		# Gloster Gladiator
 				owner = "FIN"
 				amount = 42
 				}
+				name = "Jagdgeschwader 3232"
 
-					#name = "Jagdgeschwader 232"
-					#		hawker_hurricane =  {		# Morane Saulnier
-					#			owner = "FIN"
-					#			amount = 40
-					#		}
-
-					#		name = "Jagdgeschwader 232"
 				blenheim =  {		# Blenheim
 				owner = "FIN"
 				amount = 97
 				}
 				name = "Lentolaivue 42"
+
+				#		hawker_hurricane =  {		# Morane Saulnier
+				#			owner = "FIN"
+				#			amount = 40
+				#		}
+
+				#		name = "Jagdgeschwader 232"
+
 	}
 }
 ### Starting Production ###

@@ -535,34 +535,303 @@
 			ai_will_do = {}
 		}
 
+		### Industrial focuses
+
+		### Fund lumber mills
 		focus = {
-			id = yhtyneet_paperitehtaat
-			icon = GFX_finski_conquer_usa
-			x = 22
+			id = fund_lumber_mills
+			icon = GFX_focus_generic_industry_1
+			x = 21
+			y = 0
+
+			available {
+
+			}
+
+			cost = 1
+			prerequisite = {}
+
+				cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+				completion_reward =
+					{
+						add_tech_bonus = {
+										name = FIN_construction_technology_boost_1
+										bonus = 1.0
+										uses = 1
+										category = industry
+									}
+						111 =
+						{
+							add_building_construction = {
+											type = industrial_complex
+											level = 1
+											#province = 6145
+											instant_build = yes
+					}}}
+					ai_will_do = {}
+
+		}
+
+
+
+
+		### United paper factories
+
+		focus = {
+			id = united_paper_factories
+			icon = GFX_focus_generic_industry_1
+			x = -2
 			y = 1
-			relative_position_id = reach_axis
+			relative_position_id = fund_lumber_mills
 
 			available =
 				{
-					#if { manpower > 3000 }
-					is_in_faction_with = GER
-					#NOT = { is_in_faction_with = USA }
-					#NOT = { has_country_flag = britain_enforced_our_loyalty }
 				}
-
-			mutually_exclusive =
-				{ }
 
 			bypass = {}
 			cost = 1
-			prerequisite = { focus = reach_axis }
+			prerequisite = { focus = fund_lumber_mills }
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
 
 			completion_reward =
-				{ }
+				{
+					add_tech_bonus = {
+									name = FIN_construction_technology_boost_2
+									bonus = 1.0
+									uses = 1
+									category = industry
+								}
+					111 =
+					{
+						add_building_construction = {
+										type = industrial_complex
+										level = 1
+										#province = 6145
+										instant_build = yes
+				}}}
+					#{manpower = -3000 }
+			ai_will_do = {}
+		}
+
+		focus = {
+			id = salora_radio_factory
+			icon = GFX_focus_generic_industry_1
+			x = 0
+			y = 1
+			relative_position_id = united_paper_factories
+
+			available =
+				{
+				}
+
+			bypass = {}
+			cost = 1
+			prerequisite = { focus = united_paper_factories}
+
+			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+			completion_reward =
+				{
+					add_tech_bonus = {
+									name = FIN_construction_technology_boost_3
+									bonus = 1.0
+									uses = 1
+									category = electronics
+								}
+					111 =
+					{
+						add_building_construction = {
+										type = industrial_complex
+										level = 1
+										#province = 6145
+										instant_build = yes
+				}}}
+					#{manpower = -3000 }
+			ai_will_do = {}
+		}
+
+		focus = {
+			id = lapua_munitions_factory
+			icon = GFX_focus_generic_industry_1
+			x = 23
+			y = 0
+			#relative_position_id = reach_axis
+
+			available =
+				{
+				}
+
+			bypass = {}
+			cost = 1
+			prerequisite = { }
+
+			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+			completion_reward =
+				{
+					add_tech_bonus = {
+									name = FIN_arms_technology_boost_2
+									bonus = 1.0
+									uses = 1
+									category = infantry_weapons
+								}
+					111 =
+					{
+						add_building_construction = {
+										type = arms_factory
+										level = 1
+										#province = 6145
+										instant_build = yes
+				}}}
+					#{manpower = -3000 }
+			ai_will_do = {}
+		}
+
+		focus = {
+			id = tikkakoski_munitions_factory
+			icon = GFX_focus_generic_industry_1
+			x = 0
+			y = 1
+			relative_position_id = lapua_munitions_factory
+
+			available =
+				{
+					focus = lapua_munitions_factory
+				}
+
+			bypass = {}
+			cost = 1
+			prerequisite = { focus = lapua_munitions_factory }
+
+			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+			completion_reward =
+				{
+					add_tech_bonus = {
+									name = FIN_arms_technology_boost_3
+									bonus = 1.0
+									uses = 1
+									category = infantry_weapons
+								}
+					111 =
+					{
+						add_building_construction = {
+										type = arms_factory
+										level = 1
+										#province = 6145
+										instant_build = yes
+				}}}
+					#{manpower = -3000 }
+			ai_will_do = {}
+		}
+		focus = {
+			id = tikkakoski_arms_factory
+			icon = GFX_focus_generic_industry_1
+			x = 23
+			y = 0
+			#relative_position_id = reach_axis
+
+			available =
+				{
+				}
+
+			bypass = {}
+			cost = 1
+			prerequisite = { }
+
+			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+			completion_reward =
+				{
+					add_tech_bonus = {
+									name = FIN_arms_technology_boost_2
+									bonus = 1.0
+									uses = 1
+									category = infantry_weapons
+								}
+					111 =
+					{
+						add_building_construction = {
+										type = arms_factory
+										level = 1
+										#province = 6145
+										instant_build = yes
+				}}}
+					#{manpower = -3000 }
+			ai_will_do = {}
+		}
+
+		focus = {
+			id = tampella_munitions_factory
+			icon = GFX_focus_generic_industry_1
+			x = 24
+			y = 0
+			#relative_position_id = reach_axis
+
+			available =
+				{
+				}
+
+			bypass = {}
+			cost = 1
+			prerequisite = { }
+
+			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+			completion_reward =
+				{
+					add_tech_bonus = {
+									name = FIN_arms_technology_boost_4
+									bonus = 1.0
+									uses = 1
+									category = artillery
+								}
+					111 =
+					{
+						add_building_construction = {
+										type = arms_factory
+										level = 1
+										#province = 6145
+										instant_build = yes
+				}}}
+					#{manpower = -3000 }
+			ai_will_do = {}
+		}
+		focus = {
+			id = sisu_truck_factory
+			icon = GFX_focus_generic_industry_1
+			x = 25
+			y = 0
+			#relative_position_id = reach_axis
+
+			available =
+				{
+				}
+
+			bypass = {}
+			cost = 1
+			prerequisite = { }
+
+			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
+
+			completion_reward =
+				{
+					add_tech_bonus = {
+									name = FIN_arms_technology_boost_5
+									bonus = 1.0
+									uses = 1
+									category = motorized_equipment
+								}
+					111 =
+					{
+						add_building_construction = {
+										type = arms_factory
+										level = 1
+										#province = 6145
+										instant_build = yes
+				}}}
 					#{manpower = -3000 }
 			ai_will_do = {}
 		}
