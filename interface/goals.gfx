@@ -23,8 +23,43 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-	name = "GFX_finski_conquer_usa"
-	texturefile = "gfx/interface/goals/focus_finski_conquer_usa.dds"
+	name = "GFX_alko"
+	texturefile = "gfx/interface/goals/focus_alko.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_lapua"
+	texturefile = "gfx/interface/goals/focus_lapua.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_sako"
+	texturefile = "gfx/interface/goals/focus_sako.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_salora"
+	texturefile = "gfx/interface/goals/focus_salora.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_sisu"
+	texturefile = "gfx/interface/goals/focus_sisu.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_tampella"
+	texturefile = "gfx/interface/goals/focus_tampella.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_tikka"
+	texturefile = "gfx/interface/goals/focus_tikka.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_yhtyneet_paperitehtaat"
+	texturefile = "gfx/interface/goals/focus_yhtyneet_paperitehtaat.dds"
 	}
 
 	#### Generic continuous goal icons

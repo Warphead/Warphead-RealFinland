@@ -65,6 +65,37 @@
 			ai_will_do = {}
 		}
 
+		focus = {
+			id = pervitin
+			icon = GFX_finski_conquer_usa
+			x = 4 y = 1
+			relative_position_id = diplomatic_preparations
+
+			available =
+				{
+					NOT = { is_in_faction_with = USA }
+					#NOT = { has_country_flag = britain_enforced_our_loyalty }
+				}
+
+			mutually_exclusive =
+				{ }
+
+			bypass = {}
+			cost = 1
+			prerequisite = { focus = reach_axis }
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+
+			completion_reward =
+				{ category_all_infantry = {
+    			maximum_speed = 0.1
+				}
+ 		}
+			ai_will_do = {}
+		}
+
 		### Reach comitern
 
 		focus = {
@@ -179,11 +210,11 @@
 			prerequisite = { focus = alko_2 }
 			cancel_if_invalid = yes continue_if_invalid = no available_if_capitulated = no
 
-			select_effect {
+			#select_effect {
 				#civilian factories -1
 				#requested_factories = 1
 
-			}
+			#}
 
 			completion_reward = {
 				111 = {
@@ -544,9 +575,9 @@
 			x = 21
 			y = 0
 
-			available {
+			#available {
 
-			}
+			#}
 
 			cost = 1
 			prerequisite = {}
@@ -696,10 +727,10 @@
 			y = 1
 			relative_position_id = lapua_munitions_factory
 
-			available =
-				{
-					focus = lapua_munitions_factory
-				}
+			#available =
+				#{
+				#	focus = lapua_munitions_factory
+				#}
 
 			bypass = {}
 			cost = 1

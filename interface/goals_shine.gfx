@@ -1,5 +1,7 @@
 spriteTypes = {
 
+### Real Finland mod
+
 SpriteType = {
 	name = "GFX_construct_finnish_forts"
 	texturefile = "gfx/interface/goals/focus_construct_finnish_forts.dds"
@@ -33,11 +35,11 @@ SpriteType = {
 }
 
 SpriteType = {
-	name = "GFX_goal_finski_conquer_usa_shine"
-	texturefile = "gfx/interface/goals/focus_finski_conquer_usa.dds"
+	name = "GFX_reach_comitern"
+	texturefile = "gfx/interface/goals/focus_reach_comitern.dds"
 			effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-		animationmaskfile = "gfx/interface/goals/focus_finski_conquer_usa.dds"
+		animationmaskfile = "gfx/interface/goals/focus_reach_comitern.dds"
 		animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 		animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 		animationlooping = no			# yes or no ;)
@@ -50,7 +52,7 @@ SpriteType = {
 	}
 
 	animation = {
-		animationmaskfile = "gfx/interface/goals/focus_finski_conquer_usa.dds"
+		animationmaskfile = "gfx/interface/goals/focus_reach_comitern.dds"
 		animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 		animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 		animationlooping = no			# yes or no ;)
@@ -64,6 +66,7 @@ SpriteType = {
 	legacy_lazy_load = no
 }
 
+### old files
 
 	SpriteType = {
 		name = "GFX__shine"
